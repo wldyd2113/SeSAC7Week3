@@ -18,6 +18,9 @@ class ViewController: UIViewController {
         print(4)
         print(5)
         print(6)
+        
+        //print 나 파일 추가 등 코드 작성하면서
+        //commit message 를 3개 정도 남겨보기
     }
 
 
