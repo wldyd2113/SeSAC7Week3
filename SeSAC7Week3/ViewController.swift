@@ -15,6 +15,13 @@ class ViewController: UIViewController {
         
         return button
     }()
+    
+    let labelGit: UILabel = {
+        let label = UILabel()
+        label.text = "Git"
+        
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +37,7 @@ class ViewController: UIViewController {
         //commit message 를 3개 정도 남겨보기
         print(9)
         view.addSubview(buttongGit)
+        view.addSubview(labelGit)
     }
 
 
