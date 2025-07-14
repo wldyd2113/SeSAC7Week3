@@ -6,22 +6,10 @@
 //
 
 import UIKit
-
+import Toast
 class ViewController: UIViewController {
     
-    let buttongGit: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("버튼", for: .normal)
-        
-        return button
-    }()
-    
-    let labelGit: UILabel = {
-        let label = UILabel()
-        label.text = "Git"
-        
-        return label
-    }()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,11 +25,14 @@ class ViewController: UIViewController {
         //print 나 파일 추가 등 코드 작성하면서
         //commit message 를 3개 정도 남겨보기
         //빌드가 잘될때 commit
-        print(9)
-        view.addSubview(buttongGit)
-        view.addSubview(labelGit)
-    }
 
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        view.makeToast("안녕하세요 반갑습니다", duration: 10, position: .top) //바탕에만 뜨는거여서 레이블에 적용안될 가능성이 큼
+    }
 
 }
 
